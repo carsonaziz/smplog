@@ -1,13 +1,14 @@
-#include <iostream>
-
 #include "logger.h"
 
-using LOG = Logger::Logger;
+using LOG = smplog::Logger;
+
+//TODO::Add support to output to external file
 
 int main() {
-    LOG console_log("APP");
-    console_log.set_level(LOG_LEVEL::Info);
-    console_log.info("Succesfully loaded textures");
+    LOG console_log("APP", "log.txt");
+    console_log.set_level(LOG_LEVEL::Debug);
+    console_log.debug("Application version %d initialized", 1.1);
+    console_log.info("Successfully loaded textures");
     console_log.warn("This is the %ist warning message", 1);
 
     LOG app_log("CONSOLE");
