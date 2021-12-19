@@ -1,0 +1,2 @@
+# smplog
+Simple C++ Logger
