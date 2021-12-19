@@ -74,12 +74,12 @@ namespace smplog
         void info(const std::string& msg, ...);
         void warn(const std::string& msg, ...);
         void error(const std::string& msg, ...);
-        void log(const std::string& msg);
 
         log_level get_level();
         log_output get_output();
     private:
         std::string format(const std::string& msg, va_list args);
+        void log(const std::string& msg);
     };
 }
 

@@ -2,8 +2,6 @@
 
 using LOG = smplog::Logger;
 
-//TODO::Add support to output to external file
-
 int main() {
     LOG console_log("APP", "log.txt");
     console_log.set_level(LOG_LEVEL::Debug);
