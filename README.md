@@ -26,7 +26,7 @@ The macro `LOG_LEVEL` is short for `smplog::log_level`
 
 Features are demonstrated in main.cpp as well
 
-```c_cpp
+```c++
 using LOG = smplog::Logger;
 
 int main()
